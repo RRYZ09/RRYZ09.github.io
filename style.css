@@ -1,0 +1,224 @@
+/* rryz09.github.io — soft, quiet, PetitOnes-ish */
+
+:root {
+  --bg: #faf6f1;
+  --bg-card: #ffffff;
+  --text: #3d3733;
+  --text-soft: #7a716a;
+  --accent: #d97f4e;      /* soft warm orange */
+  --accent-soft: #f3d9c8;
+  --line: #e8e0d8;
+  --radius: 14px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #201c19;
+    --bg-card: #2a2521;
+    --text: #ece5de;
+    --text-soft: #a99e94;
+    --accent: #e8a06c;
+    --accent-soft: #4a3a2e;
+    --line: #3a332d;
+  }
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans CJK JP",
+    "Noto Sans JP", "Yu Gothic UI", "Meiryo", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* hero */
+.hero {
+  padding: 96px 0 64px;
+  text-align: center;
+  border-bottom: 1px solid var(--line);
+}
+
+.hero-kicker {
+  font-size: 14px;
+  letter-spacing: 0.25em;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 8px 0 16px;
+}
+
+.hero-lead {
+  font-size: 15px;
+  color: var(--text-soft);
+  letter-spacing: 0.06em;
+}
+
+.hero-sub {
+  margin-top: 28px;
+  font-size: 17px;
+}
+
+.hero-nav {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.hero-nav a {
+  padding: 6px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 14px;
+  color: var(--text-soft);
+  background: var(--bg-card);
+}
+
+.hero-nav a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
+/* sections */
+section { padding: 64px 0; }
+section + section { border-top: 1px solid var(--line); }
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+h2::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background: var(--accent);
+  flex: none;
+}
+
+section p + p { margin-top: 16px; }
+
+em { font-style: normal; color: var(--accent); font-weight: 600; }
+
+.en-summary {
+  margin-top: 28px;
+  padding: 18px 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  font-size: 14.5px;
+  color: var(--text-soft);
+  line-height: 1.75;
+}
+
+/* project cards */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px 22px 18px;
+}
+
+.card h3 { font-size: 17px; margin-bottom: 2px; }
+
+.card-tag {
+  font-size: 12.5px;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.card p:not(.card-tag):not(.card-links) {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text-soft);
+}
+
+.card-links {
+  margin-top: 12px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  font-size: 13.5px;
+}
+
+/* career timeline */
+.timeline { list-style: none; }
+
+.timeline li {
+  display: flex;
+  gap: 20px;
+  padding: 14px 0;
+  border-bottom: 1px dashed var(--line);
+}
+
+.tl-when {
+  flex: none;
+  width: 72px;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 14.5px;
+  padding-top: 2px;
+}
+
+.tl-what { flex: 1; }
+
+.note {
+  margin-top: 24px;
+  font-size: 14px;
+  color: var(--text-soft);
+}
+
+/* links */
+.link-list { list-style: none; }
+.link-list li { padding: 6px 0; }
+
+/* footer */
+footer {
+  border-top: 1px solid var(--line);
+  padding: 40px 0 56px;
+  text-align: center;
+  color: var(--text-soft);
+  font-size: 13px;
+}
+
+/* responsive */
+.sp-only { display: none; }
+
+@media (max-width: 640px) {
+  .hero { padding: 64px 0 48px; }
+  .hero h1 { font-size: 32px; }
+  .cards { grid-template-columns: 1fr; }
+  .sp-only { display: inline; }
+  section { padding: 48px 0; }
+}

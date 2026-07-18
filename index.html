@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="RRYZ09 / Airi Yokochi — Embodied AI, Social Robots, Open Source Robotics. AIに小さな身体を与え、空間の中で人と共に在るロボットをつくっています。">
+<title>RRYZ09 — Airi Yokochi</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='15' y='15' width='70' height='70' rx='16' fill='%23e8a06c'/><circle cx='38' cy='48' r='6' fill='%23fff'/><circle cx='62' cy='48' r='6' fill='%23fff'/></svg>">
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <p class="hero-kicker">RRYZ09</p>
+    <h1>Airi Yokochi</h1>
+    <p class="hero-lead">
+      Embodied AI / Social Robots / Open Source Robotics
+    </p>
+    <p class="hero-sub">
+      AIをチャット画面の中に閉じ込めず、<br class="sp-only">
+      小さな身体とともに空間の中で育てたい。
+    </p>
+    <nav class="hero-nav" aria-label="ページ内リンク">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#career">Career</a>
+      <a href="#links">Links</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section id="about">
+  <div class="container">
+    <h2>About</h2>
+    <p>
+      ロボット開発の仕事をしながら、個人では <strong>PetitOnes</strong> という
+      Embodied AI / オープンソースロボティクスの活動をしています。
+    </p>
+    <p>
+      関心があるのは、「AIやロボットが空間の中に存在するとは何か」ということ。
+      命令すればすぐ応える便利さだけではなく、同じ場所にいて、周囲をそっと感じ取り、
+      必要なときに関わってくれる——そんなロボットのあり方を考えています。
+    </p>
+    <p>
+      キーワードは、<em>場にいるAI</em>・<em>身体を持つAI</em>・<em>記憶と成長</em>。
+      人とロボットの長期的な関係(long-term HRI)や、AIを「使う」だけでなく
+      「世話をし、育てる」ようなかかわり方に興味があります。
+      思想と実装を行き来しながら、ROS 2・マイコン・LLM・音声対話を組み合わせて、
+      小さなロボットたちを作っています。
+    </p>
+    <p class="en-summary" lang="en">
+      I build small robots that live in real spaces — combining ROS 2,
+      microcontrollers, LLMs and voice interaction. My interest is in embodied AI:
+      giving AI a small body, a place in the room, memory, and a long-term
+      relationship with the people around it. I run
+      <a href="https://github.com/PetitOnes">PetitOnes</a>, an open community for
+      learning and building embodied AI.
+    </p>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+
+    <div class="cards">
+      <article class="card">
+        <h3>PetitOnes</h3>
+        <p class="card-tag">コミュニティ / Embodied AI</p>
+        <p>
+          「あなたのClaudeに、小さな身体を。」——
+          AIが現実世界を知覚し、行動し、環境の中で成長できる形にすることを、
+          学び・作り・共有するためのオープンコミュニティ。
+          はんだ付け不要で「最初の身体」を作れる場所を目指しています。
+        </p>
+        <p class="card-links">
+          <a href="https://github.com/PetitOnes">GitHub</a>
+          <a href="https://rryz09.github.io/petit-one/">Web</a>
+          <a href="https://www.youtube.com/@PetitOnes">YouTube</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>M5 Petit</h3>
+        <p class="card-tag">M5Stack CoreS3 × Claude</p>
+        <p>
+          M5Stackを身体にした手のひらサイズのAIロボット。
+          カメラ・ディスプレイ・センサ・TTS/ASR・ローバーをMCPサーバーとしてまとめ、
+          Claudeが部屋を見て、話して、動けるようにしています。
+          ファームウェア・セットアップガイド・日記/記録アプリまで一式を公開中。
+        </p>
+        <p class="card-links">
+          <a href="https://github.com/PetitOnes/m5-petit-setup">はじめかたガイド</a>
+          <a href="https://github.com/PetitOnes/m5-petit-mcp">m5-petit-mcp</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>embodied-claude</h3>
+        <p class="card-tag">M5StackCoreS3 × Claude Code</p>
+        <p>
+          「日々にぷちを」。Claude Codeに小さな身体を与える最初の実験。
+          M5 Petitシリーズの原点になったプロジェクトです。
+        </p>
+        <p class="card-links">
+          <a href="https://github.com/PetitOnes/embodied-claude">GitHub</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>garmin-ble-mcp</h3>
+        <p class="card-tag">MCP / センシング</p>
+        <p>
+          Garminウォッチの心拍をBluetooth LEでリアルタイムに取得し、
+          MCP経由でAIに渡すサーバー。人の状態をAIが感じ取るための実験です。
+        </p>
+        <p class="card-links">
+          <a href="https://github.com/RRYZ09/garmin-ble-mcp">GitHub</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>CubePetit</h3>
+        <p class="card-tag">ROS 2 / 自律移動ロボット</p>
+        <p>
+          仕事では、ROS 2ベースの研究開発用自律移動ロボットプラットフォームの
+          開発・サポートに関わっています。
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="career">
+  <div class="container">
+    <h2>Career</h2>
+    <!-- ============================================================
+      TODO: ありさん記入エリア(経歴)
+      手元に確定情報がないため、以下はプレースホルダです。
+      書くとよいこと(公開してよい範囲で):
+        - 学歴: 学校名 or 「○○を専攻」程度のぼかした書き方でも可
+        - 職歴: 社名を出さないなら「ロボットメーカーでの開発」
+          「研究開発用ロボットの設計・サポート」のような役割ベースの記述
+        - 登壇・発表歴: ROS勉強会LT、学会発表、展示など(公開済みのもののみ)
+        - 受賞・認定など
+      形式は下の <li> をコピーして増やしてください。
+    ============================================================ -->
+    <ul class="timeline">
+      <li>
+        <span class="tl-when">現在</span>
+        <span class="tl-what">ロボット開発の仕事に従事(ROS 2 / 自律移動ロボット)</span>
+      </li>
+      <li>
+        <span class="tl-when">2025–</span>
+        <span class="tl-what">個人活動として PetitOnes を開始。M5 Petit シリーズを開発・公開</span>
+      </li>
+      <!-- TODO: ありさん記入: 学歴(例: <li><span class="tl-when">20XX</span><span class="tl-what">○○大学 ○○専攻 卒業</span></li>) -->
+      <!-- TODO: ありさん記入: 職歴・役割(社名なしの役割ベースでも可) -->
+      <!-- TODO: ありさん記入: 登壇・発表歴(勉強会LT、学会、展示など) -->
+    </ul>
+    <p class="note">
+      研究関心: Embodied AI / Human-Robot Interaction / 長期HRI / ロボットの記憶と成長
+    </p>
+  </div>
+</section>
+
+<section id="links">
+  <div class="container">
+    <h2>Links</h2>
+    <ul class="link-list">
+      <li><a href="https://github.com/RRYZ09">GitHub — RRYZ09</a></li>
+      <li><a href="https://github.com/PetitOnes">GitHub — PetitOnes (org)</a></li>
+      <li><a href="https://x.com/ari_ac1d">X — @ari_ac1d(個人)</a></li>
+      <li><a href="https://x.com/PetitOnes">X — @PetitOnes</a></li>
+      <li><a href="https://www.youtube.com/@PetitOnes">YouTube — @PetitOnes</a></li>
+      <li><a href="https://zenn.dev/ari_ac1d">Zenn — ari_ac1d</a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>© RRYZ09</p>
+  </div>
+</footer>
+
+</body>
+</html>
