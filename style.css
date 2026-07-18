@@ -222,6 +222,23 @@ em { font-style: normal; color: var(--accent); font-weight: 600; }
   color: var(--text-soft);
 }
 
+/* guide list (取説) */
+.guide-list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.guide-list li {
+  padding: 12px 0;
+  border-bottom: 1px dashed var(--line);
+  font-size: 14.5px;
+  color: var(--text-soft);
+}
+
+.guide-list li:last-child {
+  border-bottom: none;
+}
+
 /* links */
 .link-list { list-style: none; }
 .link-list li { padding: 6px 0; }
