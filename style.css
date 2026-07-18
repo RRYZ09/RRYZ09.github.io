@@ -193,6 +193,29 @@ em { font-style: normal; color: var(--accent); font-weight: 600; }
 
 .tl-what { flex: 1; }
 
+.sub-h {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: var(--text);
+}
+
+.chip-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip-list li {
+  padding: 4px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 13.5px;
+  color: var(--text-soft);
+}
+
 .note {
   margin-top: 24px;
   font-size: 14px;
