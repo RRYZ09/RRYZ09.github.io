@@ -1,26 +1,26 @@
 /* rryz09.github.io — soft, quiet, PetitOnes-ish */
 
 :root {
-  --bg: #faf6f1;
+  --bg: #f4f0fa;          /* pale lavender */
   --bg-card: #ffffff;
-  --text: #3d3733;
-  --text-soft: #7a716a;
+  --text: #3b3642;
+  --text-soft: #7b7288;
   --accent: #d97f4e;      /* soft warm orange */
-  --accent-soft: #f3d9c8;
-  --line: #f0e9e0;
+  --accent-soft: #e7ddf6; /* soft purple */
+  --line: #e8e2f2;
   --radius: 24px;
-  --shadow: 0 10px 30px rgba(170, 125, 90, 0.10);
+  --shadow: 0 10px 30px rgba(125, 105, 170, 0.12);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #201c19;
-    --bg-card: #2a2521;
-    --text: #ece5de;
-    --text-soft: #a99e94;
+    --bg: #211d2b;
+    --bg-card: #2b2537;
+    --text: #ebe6f2;
+    --text-soft: #a79fb5;
     --accent: #e8a06c;
-    --accent-soft: #4a3a2e;
-    --line: #322b26;
+    --accent-soft: #423857;
+    --line: #352e46;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   }
 }
