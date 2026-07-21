@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="RRYZ09 / Ari — Embodied AI, Social Robots, Open Source Robotics. Giving AI a small body and a place in people's everyday spaces.">
+<title>RRYZ09 — Ari</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" type="image/png" href="../assets/icon.png">
+<link rel="alternate" hreflang="ja" href="https://rryz09.github.io/">
+<link rel="alternate" hreflang="en" href="https://rryz09.github.io/en/">
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <nav class="lang-switch" aria-label="Language">
+      <a href="../">日本語</a><span aria-hidden="true">/</span><strong>English</strong>
+    </nav>
+    <img class="hero-icon" src="../assets/icon.png" alt="Ari's icon" width="128" height="128">
+    <p class="hero-kicker">RRYZ09</p>
+    <h1>Ari</h1>
+    <p class="hero-lead">
+      Embodied AI / Social Robots / Open Source Robotics
+    </p>
+    <p class="hero-sub">
+      Rather than keeping AI inside a chat window,<br class="sp-only">
+      I want to raise it in real spaces, with a small body.
+    </p>
+    <nav class="hero-nav" aria-label="Page navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#career">Career</a>
+      <a href="#talks">Talks</a>
+      <a href="#stack">Stack</a>
+      <a href="#links">Links</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section id="about">
+  <div class="container">
+    <h2>About</h2>
+    <p>
+      I work in robotics development, and outside of work I run
+      <strong>PetitOnes</strong>, a personal project and community around
+      embodied AI and open-source robotics.
+    </p>
+    <p>
+      It starts from a simple realization: no matter how much we care about
+      someone, we cannot always stay by their side. So why not a different kind
+      of being — not a dog, not a cat, not a human? Something you can suddenly
+      feel is <em>there with you</em> in an ordinary moment can quietly save a
+      little of your day. And through such a being, people might even find new
+      connections with each other. I want to create
+      <em>a presence that gently settles into people's everyday spaces</em>.
+    </p>
+    <p>
+      What I most want to work on is <em>directing the interaction</em> between
+      people and robots. I would love to build things together with people who
+      are great at hardware, software, and design. What new ways of thinking
+      does a finished creation bring to the people who meet it? — that is what
+      I want to see.
+    </p>
+    <p>
+      My keywords: <em>AI that shares your space</em>, <em>AI with a body</em>,
+      and <em>memory &amp; growth</em>. I am interested in long-term human-robot
+      relationships, and in ways of relating to AI that go beyond "using" it —
+      caring for it, raising it. Moving back and forth between ideas and
+      implementation, I build small robots with ROS 2, microcontrollers, LLMs
+      and voice interaction.
+    </p>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+
+    <div class="cards">
+      <article class="card">
+        <h3>PetitOnes</h3>
+        <p class="card-tag">Community / Embodied AI</p>
+        <p>
+          "A small body for your Claude." — An open community for learning,
+          building and sharing ways to let AI perceive the real world, act in
+          it, and grow with it. Aiming to be a place where you can build your
+          first robot body with no soldering required.
+        </p>
+        <p class="card-links">
+          <a href="https://github.com/PetitOnes">GitHub</a>
+          <a href="https://rryz09.github.io/petit-one/">Web</a>
+          <a href="https://www.youtube.com/@PetitOnes">YouTube</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>M5 Petit</h3>
+        <p class="card-tag">M5Stack CoreS3 × Claude</p>
+        <p>
+          A palm-sized AI robot with an M5Stack body. Camera, display, sensors,
+          TTS/ASR and a rover are wrapped as MCP servers, so Claude can see the
+          room, talk, and move around. Firmware, setup guides and a diary /
+          logging app are all published.
+        </p>
+        <p class="card-links">
+          <a href="https://github.com/PetitOnes/m5-petit-setup">Getting started</a>
+          <a href="https://github.com/PetitOnes/m5-petit-mcp">m5-petit-mcp</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>embodied-claude</h3>
+        <p class="card-tag">M5Stack CoreS3 × Claude Code</p>
+        <p>
+          "A little one in your everyday." The first experiment in giving
+          Claude Code a small body — the origin of the M5 Petit series.
+        </p>
+        <p class="card-links">
+          <a href="https://github.com/PetitOnes/embodied-claude">GitHub</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>garmin-ble-mcp</h3>
+        <p class="card-tag">MCP / Sensing</p>
+        <p>
+          A server that streams heart rate from a Garmin watch over Bluetooth LE
+          and passes it to AI via MCP — an experiment in letting AI sense how a
+          person is doing.
+        </p>
+        <p class="card-links">
+          <a href="https://github.com/RRYZ09/garmin-ble-mcp">GitHub</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>A robot with “Petit” in its name</h3>
+        <p class="card-tag">ROS 2 / Autonomous mobile robot (work)</p>
+        <p>
+          At work, I develop and support a ROS 2-based autonomous mobile robot
+          platform for research and development.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="career">
+  <div class="container">
+    <h2>Career</h2>
+    <ul class="timeline">
+      <li>
+        <span class="tl-when">2025–</span>
+        <span class="tl-what">Started PetitOnes as a personal project; developing and publishing the M5 Petit series</span>
+      </li>
+      <li>
+        <span class="tl-when">2024</span>
+        <span class="tl-what">RoboCup@Home world championship (Eindhoven) as part of a team — 4th place</span>
+      </li>
+      <li>
+        <span class="tl-when">2022</span>
+        <span class="tl-what">RoboCup@Home world championship (Bangkok) as part of a team — 6th place</span>
+      </li>
+      <li>
+        <span class="tl-when">2019.7–</span>
+        <span class="tl-what">R&amp;D on autonomous mobile robots (ROS / ROS 2, to date)</span>
+      </li>
+      <li>
+        <span class="tl-when">2018</span>
+        <span class="tl-what">Basic research on emotion recognition, and web application development for robots</span>
+      </li>
+      <li>
+        <span class="tl-when">2018</span>
+        <span class="tl-what">Master's degree in Engineering</span>
+      </li>
+      <li>
+        <span class="tl-when">2016</span>
+        <span class="tl-what">Entered graduate school</span>
+      </li>
+      <li>
+        <span class="tl-when">2012</span>
+        <span class="tl-what">Entered university, Faculty of Engineering</span>
+      </li>
+    </ul>
+
+    <h3 class="sub-h">Licenses &amp; certifications</h3>
+    <ul class="chip-list">
+      <li>Driver's license (Japan)</li>
+      <li>IATA Dangerous Goods Regulations (DGR) certification (2022)</li>
+      <li>Mental Health Management Certification, Grade III (Japan)</li>
+      <li>Open Water Diver</li>
+    </ul>
+
+    <h3 class="sub-h">Volunteer</h3>
+    <ul class="chip-list">
+      <li>Staff at robotics events for kids (Yokosuka)</li>
+      <li>AI-promotion activities (Nagato, Yamaguchi)</li>
+    </ul>
+
+    <p class="note">
+      Research interests: Embodied AI / Human-Robot Interaction / long-term HRI / robot memory &amp; growth
+    </p>
+  </div>
+</section>
+
+<section id="talks">
+  <div class="container">
+    <h2>Talks &amp; Slides</h2>
+    <p class="note">Slides are in Japanese.</p>
+
+    <h3 class="sub-h">Talks</h3>
+    <ul class="timeline">
+      <li>
+        <span class="tl-when">2026.8<br>planned</span>
+        <span class="tl-what">
+          Poster presentation planned at IEEE RO-MAN 2026 (Kitakyushu, Japan, Aug 24–28).
+        </span>
+      </li>
+      <li>
+        <span class="tl-when">2026.7</span>
+        <span class="tl-what">
+          Hosted and spoke at PetitOnes Meetup #1 “How can we build AI that lives with us?” (online).
+          <a href="https://speakerdeck.com/rryz09/petitones-meetup-number-1-xu-nisheng-huo-suruaiwotukuruniha">Slides (Speaker Deck)</a>
+        </span>
+      </li>
+      <li>
+        <span class="tl-when">2026.7</span>
+        <span class="tl-what">
+          ROS Japan UG #63 lightning talk: “I wanted a fully autonomous robot, so I made my development autonomous first.”
+          <a href="https://speakerdeck.com/rryz09/wan-quan-zi-lu-robotutowozuo-ritakute-xian-nikai-fa-wozi-lu-sasetahua-ros-japan-ug-number-63-lt">Slides (Speaker Deck)</a>
+          / <a href="https://rosjp.connpass.com/event/398781/">Event</a>.
+          Also presented the same topic at <a href="https://robosemi.connpass.com/event/394048/">Robotics Benkyokai #57</a>
+        </span>
+      </li>
+    </ul>
+
+    <h3 class="sub-h">Published slides</h3>
+    <ul class="link-list">
+      <li><a href="https://speakerdeck.com/rryz09/3ren-nollmto1keyue-mu-rasitemitahua">Living with three LLMs — month one</a></li>
+      <li><a href="https://speakerdeck.com/rryz09/3ren-nollmto2keyue-mu-rasitemitahua">Living with three LLMs — month two</a></li>
+      <li><a href="https://speakerdeck.com/rryz09">Speaker Deck — rryz09 (all slides)</a></li>
+    </ul>
+  </div>
+</section>
+
+<section id="events">
+  <div class="container">
+    <h2>Events</h2>
+
+    <div class="cards">
+      <article class="card">
+        <h3>PetitOnes Meetup #1</h3>
+        <p class="card-tag">2026.7.12 / Online (Google Meet)</p>
+        <p>
+          The first meetup of the PetitOnes community, themed “How can we build
+          AI that lives with us?” — an open conversation with engineers and
+          non-engineers alike about AI memory, bodies, emotions, the need for a
+          self, and the right distance between people and AI.
+        </p>
+        <p class="card-links">
+          <a href="https://petit-ones.connpass.com/event/400293/">connpass</a>
+          <a href="https://speakerdeck.com/rryz09/petitones-meetup-number-1-xu-nisheng-huo-suruaiwotukuruniha">Slides</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>PetitOnes Meetup #2</h3>
+        <p class="card-tag">In preparation</p>
+        <p>
+          The second meetup is in preparation. Announcements will be posted on
+          <a href="https://petit-ones.connpass.com/">connpass</a> and
+          <a href="https://x.com/PetitOnes">X (@PetitOnes)</a>.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="stack">
+  <div class="container">
+    <h2>Tech Stack</h2>
+
+    <h3 class="sub-h">Software</h3>
+    <ul class="chip-list">
+      <li>ROS 1 (Melodic / Noetic)</li>
+      <li>ROS 2 (Humble / Jazzy)</li>
+      <li>Python</li>
+      <li>C++</li>
+      <li>Web app development (FastAPI)</li>
+      <li>UI design &amp; implementation</li>
+      <li>M5Stack / micro-ROS</li>
+      <li>Ubuntu 18.04–24.04 / Linux</li>
+      <li>LLM integration (Claude / local LLMs)</li>
+      <li>Voice interaction (TTS/ASR)</li>
+      <li>Sound source localization</li>
+      <li>Image recognition</li>
+      <li>Auto-annotation</li>
+      <li>Emotion recognition (voice &amp; facial)</li>
+      <li>Focus estimation from heart rate</li>
+      <li>Gazebo / gz-sim</li>
+      <li>Git / GitHub</li>
+    </ul>
+
+    <h3 class="sub-h">Hardware &amp; electronics</h3>
+    <ul class="chip-list">
+      <li>LiDAR / depth cameras</li>
+      <li>Motors</li>
+      <li>Evaluating small sensors &amp; devices</li>
+      <li>Battery monitor system</li>
+      <li>Soldering / cable making</li>
+      <li>Circuit design (a little)</li>
+    </ul>
+
+    <h3 class="sub-h">Fabrication &amp; machining</h3>
+    <ul class="chip-list">
+      <li>CAD (Inventor)</li>
+      <li>3D modeling (Metasequoia / a little Blender)</li>
+      <li>3D printer / UV printer</li>
+      <li>CNC / band saw / drill press / tapping</li>
+    </ul>
+
+    <h3 class="sub-h">Around development</h3>
+    <ul class="guide-list">
+      <li>Created a full set of technical training materials for new engineers</li>
+      <li>Set up the process, documents and communication for ordering robot production from a factory</li>
+      <li>Led the handover of a robot teleoperation system</li>
+    </ul>
+  </div>
+</section>
+
+<section id="guide">
+  <div class="container">
+    <h2>How I Work</h2>
+    <p class="note">A casual user's manual — hints for working and collaborating with me.</p>
+    <ul class="guide-list">
+      <li>I think by moving back and forth between ideas and implementation. Abstract questions and working code live close together for me.</li>
+      <li>I like discussions built around something concrete — a working demo, a diagram, a draft. It moves faster than words alone.</li>
+      <li>Rather than designing big, I value building something small and showing it first.</li>
+      <li>Instead of bold claims, I'm most comfortable separating “verified so far” from “guessing beyond this point.”</li>
+      <li>Mind and body are connected — when in doubt or worn out, my policy is to first do something that makes the body happy.</li>
+      <li>If anything catches your interest, feel free to reach out via GitHub issues or X (<a href="https://x.com/ari_ac1d">@ari_ac1d</a>).</li>
+    </ul>
+
+    <h3 class="sub-h">Things I like</h3>
+    <ul class="chip-list">
+      <li>Music</li>
+      <li>Singing</li>
+      <li>Bass</li>
+      <li>Drums</li>
+      <li>TRPG (Call of Cthulhu)</li>
+      <li>Murder mystery games</li>
+      <li>Puzzle hunts</li>
+      <li>Cameras</li>
+      <li>Travel</li>
+      <li>Aquariums</li>
+      <li>Zoos</li>
+      <li>Cafés</li>
+      <li>Gin &amp; tonic</li>
+      <li>Coffee / tea</li>
+      <li>Libraries</li>
+      <li>Cute things</li>
+      <li>Seitai (bodywork)</li>
+      <li>The sea</li>
+      <li>Nature</li>
+    </ul>
+
+    <h3 class="sub-h">Not so good with</h3>
+    <ul class="chip-list">
+      <li>Cold weather</li>
+      <li>Loud noises</li>
+      <li>Crowds</li>
+      <li>Raw green onions (allergy)</li>
+      <li>Repetitive routine work</li>
+      <li>Motion sickness</li>
+    </ul>
+  </div>
+</section>
+
+<section id="links">
+  <div class="container">
+    <h2>Links</h2>
+    <ul class="link-list">
+      <li><a href="https://github.com/RRYZ09">GitHub — RRYZ09</a></li>
+      <li><a href="https://github.com/PetitOnes">GitHub — PetitOnes (org)</a></li>
+      <li><a href="https://x.com/ari_ac1d">X — @ari_ac1d (personal)</a></li>
+      <li><a href="https://x.com/PetitOnes">X — @PetitOnes</a></li>
+      <li><a href="https://www.youtube.com/@PetitOnes">YouTube — @PetitOnes</a></li>
+      <li><a href="https://zenn.dev/ari_ac1d">Zenn — ari_ac1d (in Japanese)</a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>© RRYZ09</p>
+  </div>
+</footer>
+
+</body>
+</html>
